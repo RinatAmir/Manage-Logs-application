@@ -2,28 +2,41 @@
   "logs": [
     {
       "id": 1,
-      "massage": "Change hard drive on workstatuin 005",
+      "message": "Change hard drive on workstatuin 005",
       "attention": false,
       "dete": "03-02-2020",
       "tech": "Rinat Amir"
     },
     {
       "id": 2,
-      "massage": "Workstation 007 not pasting",
+      "message": "Workstation 007 not pasting",
       "attention": true,
       "dete": "04-01-2020",
       "tech": "Lior Zada"
     },
     {
       "id": 3,
-      "massage": "Change memory on workstation 050",
+      "message": "Change memory on workstation 050",
       "attention": true,
       "dete": "03-03-2020",
       "tech": "Rinat Amir"
     }
   ],
   "techs": [
-    { "id": 1, "firstName": "Rinat", "lastName": "Amir" },
-    { "id": 2, "firstName": "Lior", "lastName": "Amir" }
+    {
+      "id": 1,
+      "firstName": "Rinat",
+      "lastName": "Amir"
+    },
+    {
+      "id": 2,
+      "firstName": "Lior",
+      "lastName": "Amir"
+    },
+    {
+      "firstName": "Leah",
+      "lastName": "babi",
+      "id": 3
+    }
   ]
 }
