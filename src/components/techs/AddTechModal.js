@@ -25,7 +25,7 @@ const AddTechModal = () => {
             <input
               type="text"
               name="firstName"
-              value={firstName}
+              defaultValue={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <label htmlFor="firstName" className="active">
@@ -36,7 +36,7 @@ const AddTechModal = () => {
 
         <div className="row">
           <div className="input-field">
-            <input type="text" name="lastName" value={lastName} />
+            <input type="text" name="lastName" defaultValue={lastName} />
             <label htmlFor="firstName" className="active">
               last Name:
             </label>

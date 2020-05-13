@@ -2,24 +2,24 @@
   "logs": [
     {
       "id": 1,
-      "message": "Change hard drive on workstatuin 005",
-      "attention": false,
-      "dete": "03-02-2020",
-      "tech": "Rinat Amir"
+      "message": "Change hard drive on workstatuin 600",
+      "attention": true,
+      "tech": "Lior Zada",
+      "date": "2020-05-13T13:33:48.456Z"
     },
     {
       "id": 2,
-      "message": "Workstation 007 not pasting",
-      "attention": true,
-      "dete": "04-01-2020",
-      "tech": "Lior Zada"
+      "message": "Workstation 007 not pasting..",
+      "attention": false,
+      "tech": "Lior Zada",
+      "date": "2020-05-13T13:32:17.967Z"
     },
     {
       "id": 3,
       "message": "Change memory on workstation 050",
       "attention": true,
-      "dete": "03-03-2020",
-      "tech": "Rinat Amir"
+      "tech": "Rinat Amir",
+      "date": "2020-05-13T13:31:07.937Z"
     }
   ],
   "techs": [
