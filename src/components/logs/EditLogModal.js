@@ -2,14 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { updateLog } from '../../actions/logActions';
+import TechSelectOptions from '../techs/TechSelectOptions';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 const EditLogModal = ({ current, updateLog }) => {
   const [message, setMessage] = useState('');
   const [attention, setAttention] = useState(false);
-  const [tech, setTech] = useState([]);
+  const [tech, setTech] = useState('');
 
   useEffect(() => {
+    console.log(tech);
+
     if (current) {
       setMessage(current.message);
       setAttention(current.attention);
@@ -59,14 +62,12 @@ const EditLogModal = ({ current, updateLog }) => {
               name='tech'
               value={tech}
               className='browser-default'
-              multiple={false}
               onChange={(e) => setTech(e.target.value)}
             >
               <option value='' disabled>
                 Select Technition
               </option>
-              <option value='Rinat Amir'>Rinat Amir</option>
-              <option value='Lior Zada'>Lior Zada</option>
+              <TechSelectOptions />
             </select>
           </div>
         </div>
