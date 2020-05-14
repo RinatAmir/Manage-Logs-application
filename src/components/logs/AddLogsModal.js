@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { connect } from 'react-redux';
+import TechSelectOptions from '../techs/TechSelectOptions';
 import { addLog } from '../../actions/logActions';
 import PropTypes from 'prop-types';
 
 const AddLogsModal = ({ addLog }) => {
   const [message, setMessage] = useState('');
   const [attention, setAttention] = useState(false);
-  const [tech, setTech] = useState([]);
+  const [tech, setTech] = useState('');
 
   const onSubmit = () => {
     if (message === '' || tech === '') {
@@ -59,8 +60,7 @@ const AddLogsModal = ({ addLog }) => {
               <option value='' disabled>
                 Select Technition
               </option>
-              <option value='Rinat Amir'>Rinat Amir</option>
-              <option value='Lior Zada'>Lior Zada</option>
+              <TechSelectOptions />
             </select>
           </div>
         </div>
